@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <tinymce v-model="content" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import tinymce from "@/components/Index.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    tinymce,
+  },
+  data() {
+    return {
+      content: "this is a demo",
+    };
+  },
+};
 </script>
 
 <style>
