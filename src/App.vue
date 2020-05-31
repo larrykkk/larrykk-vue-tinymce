@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import tinymce from "@/components/Index.vue";
+import tinymce from "@/components/tinyMCE.vue";
 
 export default {
   name: "App",

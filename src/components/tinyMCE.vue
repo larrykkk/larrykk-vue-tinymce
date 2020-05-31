@@ -53,8 +53,8 @@ export default {
       type: Object,
       default: function() {
         return {
-          // language_url: '/lib/tinymce/langs/zh_TW.js',
-          // language: 'zh_TW',
+          language_url: '/lib/tinymce/langs/zh_TW.js',
+          language: 'zh_TW',
           emoticons_database_url:
             '/lib/tinymce/plugins/emoticons/js/emojis.min.js',
           skin_url: '/lib/tinymce/skins/ui/oxide',

@@ -1,15 +1,20 @@
 {
   "name": "@larrykk/vue-tinymce",
-  "version": "0.1.1",
+  "version": "0.1.7",
+  "main": "dist/@larrykk/vue-tinymce.common.js",
   "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name @larrykk/vue-tinymce ./src/components/Index.vue",
+    "lint": "vue-cli-service lint"
+  },
+  "files": [
+    "dist",
+    "public"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/larrykkk/larrykk-vue-tinymce.git"
-  },
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@tinymce/tinymce-vue": "^3.2.2",
